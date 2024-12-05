@@ -5,3 +5,188 @@
  * JavaFX start() method:
  *   scene.getStylesheets().add("main.css");
  */
+
+.layout {
+    -fx-background-color: #faf8ef; /* Light beige background */
+    -fx-font-family: "Clear Sans", Calibri, sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 10px;
+}
+
+.scoreboard {
+    -fx-alignment: center-right;
+    -fx-spacing: 10px;
+}
+
+.logo {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #bbada0; /* Warm gray for logo background */
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 15;
+    -fx-font-size: 30px;
+    -fx-alignment: center;
+}
+
+.score {
+    -fx-background-color: #f2b179; /* Light orange for score background */
+    -fx-background-radius: 4px;
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+.score-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+}
+
+.score-value {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10px;
+}
+
+.solved {
+    -fx-background-color: #90ee90; /* Light green for solved puzzles */
+    -fx-background-radius: 4px;
+    -fx-padding: 10;
+    -fx-alignment: center;
+    -fx-font-size: 18px;
+    -fx-text-fill: #212121;
+}
+
+.instructions {
+    -fx-text-fill: #766f65; /* Neutral brown for instructions */
+    -fx-padding: 10 0 10 0; /* top, right, bottom, left */
+}
+
+.board {
+    -fx-background-color: #bbada0; /* Warm gray for the board background */
+    -fx-padding: 10px;
+}
+
+.tile {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 25px;
+    -fx-alignment: center;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #cdc1b4; /* Light gray for default tiles */
+}
+
+.tile-0 {
+    /* CLUE */
+    -fx-background-color: #eee4da; /* Light beige for clues */
+    -fx-text-fill: #776e65; /* Dark gray for clue text */
+    -fx-background-radius: 4px;
+}
+
+.tile-1 {
+    /* SATISFIED CLUE */
+    -fx-background-color: #f2b179; /* Light orange for satisfied clues */
+    -fx-text-fill: #ffffff; /* White text for satisfied clues */
+    -fx-background-radius: 4px;
+}
+
+.tile-2 {
+    /* WALL */
+    -fx-background-color: #776e65; /* Dark gray for walls */
+    -fx-background-radius: 4px;
+}
+
+.tile-3 {
+    /* CORRIDOR */
+    -fx-font-size: 5px;
+    -fx-background-color: #cdc1b4; /* Light gray for corridors */
+}
+
+.tile-4 {
+    /* ILLEGAL LAMP */
+    -fx-font-size: 5px;
+    -fx-background-color: #f5635b; /* Vibrant red for illegal lamps */
+}
+
+.tile-5 {
+    /* LAMP */
+    -fx-font-size: 5px;
+    -fx-background-color: #ffcc00; /* Bright yellow for lamps */
+}
+
+.tile-6 {
+    /* LIT */
+    -fx-font-size: 5px;
+    -fx-background-color: #ffe680; /* Soft yellow for lit cells */
+}
+
+.lamp-illegal {
+    -fx-background-color: #ff5722; /* Vibrant red-orange for illegal lamps */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-align: center;
+    -fx-border-radius: 5px;
+}
+
+.lamp {
+    -fx-background-color: #ffcc00; /* Bright yellow for lamps */
+    -fx-font-weight: bold;
+    -fx-text-align: center;
+    -fx-border-radius: 5px;
+}
+
+.lit {
+    -fx-background-color: #fff59d; /* Soft yellow for lit cells */
+    -fx-border-radius: 5px;
+}
+
+.corridor {
+    -fx-background-color: #cdc1b4; /* Light gray for corridors */
+    -fx-border-radius: 5px;
+}
+
+.clue {
+    -fx-background-color: #eee4da; /* Light beige for clues */
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-align: center;
+}
+
+.clue-satisfied {
+    -fx-background-color: #f2b179; /* Light orange for satisfied clues */
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-align: center;
+}
+
+.wall {
+    -fx-background-color: #776e65; /* Dark gray for walls */
+    -fx-border-radius: 4px;
+}
+
+.controls button {
+    -fx-background-color: #8f7a66; /* Brown buttons matching 2048 */
+    -fx-color: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: pointer;
+    -fx-transition: background-color 0.2s ease;
+}
+
+.controls button:hover {
+    -fx-background-color: #a0765a; /* Slightly lighter for hover */
+}
+
+.controls button:pressed {
+    -fx-background-color: #6e5845; /* Darker for pressed state */
+}
+
+.solved-message {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-align: center;
+    -fx-color: #4caf50; /* Green for success */
+    -fx-margin-top: 20px;
+}

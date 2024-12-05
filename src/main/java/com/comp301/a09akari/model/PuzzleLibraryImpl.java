@@ -1,5 +1,6 @@
 package com.comp301.a09akari.model;
 
+import com.comp301.a09akari.SamplePuzzles;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +9,23 @@ public class PuzzleLibraryImpl implements PuzzleLibrary {
 
   public PuzzleLibraryImpl() {
     this.puzzles = new ArrayList<>();
+  }
+
+  public static PuzzleLibrary create() {
+    Puzzle puzzle1 = new PuzzleImpl(SamplePuzzles.PUZZLE_01);
+    Puzzle puzzle2 = new PuzzleImpl(SamplePuzzles.PUZZLE_02);
+    Puzzle puzzle3 = new PuzzleImpl(SamplePuzzles.PUZZLE_03);
+    Puzzle puzzle4 = new PuzzleImpl(SamplePuzzles.PUZZLE_04);
+    Puzzle puzzle5 = new PuzzleImpl(SamplePuzzles.PUZZLE_05);
+
+    PuzzleLibrary puzzleLibrary = new PuzzleLibraryImpl();
+    puzzleLibrary.addPuzzle(puzzle1);
+    puzzleLibrary.addPuzzle(puzzle2);
+    puzzleLibrary.addPuzzle(puzzle3);
+    puzzleLibrary.addPuzzle(puzzle4);
+    puzzleLibrary.addPuzzle(puzzle5);
+
+    return puzzleLibrary;
   }
 
   @Override
